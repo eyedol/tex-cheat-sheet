@@ -6,7 +6,7 @@ FontAwesome.
 
 ### Sample Screenshots For Android Studio Keyboard Shortcuts
 
-<img src="screenshots/android-studio-keyboard-shortcuts.png" width="400" /> <img src="doc/android-studio-keyboard-shortcuts.png" width="400" />
+<img src="screenshots/android-studio-keyboard-shortcuts.png" width="500" />
 
 ### Generate PDF
 
