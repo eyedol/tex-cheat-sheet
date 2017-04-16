@@ -1,0 +1,15 @@
+% Generates Android Studio keyboard shortcuts using longtable package
+\documentclass[10pt,a4paper]{cheat-sheet}
+\recalctypearea
+\usepackage{ltxtable,tabularx,makecell,colortbl,longtable}
+\usepackage[margin=2cm,footskip=.1cm]{geometry}
+\begin{document}
+  \makefooter
+  {}
+  {License~~~·~~~\faCreativeCommons}
+  {\thepage}
+  \begin{center}
+  \renewcommand{\arraystretch}{1.25}
+    \LTXtable{\textwidth}{android-studio-longtable}
+  \end{center}
+\end{document}

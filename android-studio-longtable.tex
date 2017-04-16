@@ -1,0 +1,243 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+{\renewcommand{\arraystretch}{2}%
+  \rowcolors{1}{}{grey}
+  \begin{longtable}{|>{\setmenukeyswin}c |>{\setmenukeysmac}c |X|}
+  \caption{Default keyboard shortcuts for Windows/Linux and Mac operating systems.} \\
+  \hline
+  \headerrowcolor
+  \multicolumn{1}{|c|}{\sffamily{\textbf{Windows}} \faWindows\textsc{ /} \sffamily{\textbf{Linux}} \faLinux} & 
+      \multicolumn{1}{c|}{\sffamily{\textbf{Mac}} \faApple} & 
+      \multicolumn{1}{c|}{\sffamily{\textbf{Description}} \faComment} \\
+  \hline
+  \endfirsthead
+
+  \multicolumn{3}{l}{\footnotesize \faChevronCircleLeft\ (from previous page)}\\[1em]
+  \hline
+  \headerrowcolor
+  \multicolumn{1}{|c|}{\sffamily{\textbf{Windows}} \faWindows\textsc{ /} \sffamily{\textbf{Linux}} \faLinux} & 
+      \multicolumn{1}{c|}{\sffamily{\textbf{Mac}} \faApple} & 
+      \multicolumn{1}{c|}{\sffamily{\textbf{Description}} \faComment} \\
+  \endhead
+  \multicolumn{3}{r}{\footnotesize (continued next page) \faChevronCircleRight} 
+  \endfoot
+  \hline
+  \endlastfoot
+  \subheaderrowcolor \multicolumn{3}{|l|}{General} \\
+  \hline
+  \keys{\ctrl + S} & \keys{\cmd + S} & Save all \\
+  \hline
+  \keys{\ctrl + \Alt + Y} & \keys{\cmd + \Alt + Y} & Synchronize \\
+  \hline
+  \keys{\ctrl + \shift + F12} & \keys{\ctrl + \cmd + F12} & Maximize/minimize editor \\
+  \hline
+  \keys{\Alt + \shift + F} & \keys{\Alt + \shift + F} & Add to favorites \\
+  \hline
+  \keys{\Alt + \shift + I} & \keys{\Alt + \shift + I} & Inspect current file with current profile \\
+  \hline
+  \keys{\ctrl + `} & \keys{\ctrl + `} & Quick switch scheme \\
+  \hline
+  \keys{\ctrl + \Alt + S} & \keys{\cmd + ,} & Open settings dialogue \\
+  \hline
+  \keys{\ctrl + \Alt + \shift + S} & \keys{\cmd + ;} & Open project structure dialog \\
+  \hline
+  \keys{\ctrl + \tab} & \keys{\ctrl + \tab} & Switch between tabs and tool window \\
+  \hline
+  \subheaderrowcolor \multicolumn{3}{|l|}{Navigating and Searching Within
+  Studio} \\
+  \hline
+  Press \keys{\shift} twice & Press \keys{\shift} twice & Search everything (including code and menus) \\
+  \hline
+  \keys{\ctrl + F} & \keys{\cmd + F} & Find \\
+  \hline
+  \keys{F3} & \keys{\cmd + G} & Find next \\
+  \hline
+  \keys{\shift + F3} & \keys{\cmd + \shift + G} & Find previous \\
+  \hline
+  \keys{\ctrl + R} & \keys{\cmd + R} & Replace \\
+  \hline
+  \keys{\ctrl + \shift + A} & \keys{\cmd + \shift + A} & Find action \\
+  \hline
+  \keys{\ctrl + \Alt + \shift + N} & \keys{\cmd + \Alt + O} & Search by symbol name \\
+  \hline
+  \keys{\ctrl + N} & \keys{\cmd + O} & Find class \\
+  \hline
+  \keys{\ctrl + \shift + N} & \keys{\cmd + \shift + O} & Find file (instead of class) \\
+  \hline
+  \keys{\ctrl + \shift + F} & \keys{\cmd + \shift + F} & Find in path \\
+  \hline
+  \keys{\ctrl + F12} & \keys{\cmd + F12} & Open file structure pop-up \\
+  \hline
+  \keys{\Alt + \arrowkeyright} or \keys{\Alt + \arrowkeyleft} & \keys{\ctrl + \arrowkeyright} or \keys{\ctrl + \arrowkeyleft} & Navigate between open editor tabs \\
+  \hline
+  \keys{F4} or \keys{\ctrl + \return} & \keys{F4} or \keys{\cmd + \arrowkeydown} & Jump to source \\
+  \hline
+  \keys{\shift + F4} & \keys{\shift + F4} & Open current editor tab in new window \\
+  \hline
+  \keys{\ctrl + E} & \keys{\cmd + E} & Recently opened files pop-up \\
+  \hline
+  \keys{\ctrl + \shift + E} & \keys{\cmd + \shift + E} & Recently edited files pop-up \\
+  \hline
+  \keys{\ctrl + \shift + \backspace} & \keys{\cmd + \shift + \backspace} & Go to last edit location \\
+  \hline
+  \keys{\ctrl + F4} & \keys{\cmd + W} & Close active editor tab \\
+  \hline
+  \keys{\esc} & \keys{\esc} & Return to editor window from a tool window \\
+  \hline
+  \keys{\shift + Esc} & \keys{\shift + Esc} & Hide active or last active tool window \\
+  \hline
+  \keys{\ctrl + G} & \keys{\cmd + L} & Go to line \\
+  \hline
+  \keys{\ctrl + H} & \keys{\ctrl + H} & Open type hierarchy \\
+  \hline
+  \keys{\ctrl + \shift + H} & \keys{\cmd + \shift + H} & Open method hierarchy \\
+  \hline
+  \keys{\ctrl + \Alt + H} & \keys{\ctrl + \Alt + H} & Open call hierarchy \\
+  \hline
+  \subheaderrowcolor \multicolumn{3}{|l|}{Writing Code} \\
+  \hline
+  \keys{\Alt + Insert} & \keys{\cmd + N} & Generate code (getters, setters, constructors, hashCode/equals, toString, new file, new class) \\
+  \hline
+  \keys{\ctrl + O} & \keys{\ctrl + O} & Override methods \\
+  \hline
+  \keys{\ctrl + I} & \keys{\ctrl + I} & Implement methods \\
+  \hline
+  \keys{\ctrl + \Alt + T} & \keys{\cmd + \Alt + T} & Surround with (if...else / try...catch / etc.) \\
+  \hline
+  \keys{\ctrl + Y} & \keys{\cmd + \backspace} & Delete line at caret \\
+  \hline
+  \keys{\ctrl + -} or \keys{\ctrl + {\sffamily\scriptsize+}} & \keys{\cmd + -} or \keys{\cmd + {\sffamily\scriptsize+}} & Collapse/expand current code block \\
+  \hline
+  \keys{\ctrl + \shift + -} or \keys{\ctrl + \shift + {\sffamily\scriptsize+}} & \keys{\cmd + \shift + -} or \keys{\cmd + \shift + {\sffamily\scriptsize+}} & Collapse/expand all code blocks \\
+  \hline
+  \keys{\ctrl + D} & \keys{\cmd + D} & Duplicate current line or selection \\
+  \hline
+  \keys{\ctrl + \SPACE} & \keys{\ctrl + \SPACE} & Basic code completion \\
+  \hline
+  \keys{\ctrl + \shift + \SPACE} & \keys{\ctrl + \shift + \SPACE} & Smart code completion (filters the list of methods and variables by expected type) \\
+  \hline
+  \keys{\ctrl + \shift + \return} & \keys{\cmd + \shift + \return} & Complete statement \\
+  \hline
+  \keys{\ctrl + Q} & \keys{\ctrl + J} & Quick documentation lookup \\
+  \hline
+  \keys{\ctrl + P} & \keys{\cmd + P} & Show parameters for selected method \\
+  \hline
+  \keys{\ctrl + B} or \keys{\ctrl + Click} & \keys{\cmd + B } or \keys{\cmd + Click} & Go to declaration (directly) \\
+  \hline
+  \keys{\ctrl + \Alt + B} & \keys{\cmd + Alt + B} & Go to implementations \\
+  \hline
+  \keys{\ctrl + U} & \keys{\cmd + U} & Go to super-method/super-class \\
+  \hline
+  \keys{\ctrl + \shift + I} & \keys{\cmd + Y} & Open quick definition lookup \\
+  \hline
+  \keys{\Alt + 1} & \keys{\cmd + 1} & Toggle project tool window visibility \\
+  \hline
+  \keys{F11} & \keys{F3} & Toggle bookmark \\
+  \hline
+  \keys{\ctrl + F11} & \keys{\Alt + F3} & Toggle bookmark with mnemonic \\
+  \hline
+  \keys{\ctrl + /} & \keys{\cmd + /} & Comment/uncomment with line comment \\
+  \hline
+  \keys{\ctrl + \shift + /} & \keys{\cmd + \shift + /} & Comment/uncomment with block comment \\
+  \hline
+  \keys{\ctrl + W} & \keys{\Alt + Up} & Select successively increasing code blocks \\
+  \hline
+  \keys{\ctrl + \shift + W} & \keys{\Alt + Down} & Decrease current selection to previous state \\
+  \hline
+  \keys{\ctrl + [} & \keys{\Alt + \cmd + [} & Move to code block start \\
+  \hline
+  \keys{\ctrl + ]} & \keys{\Alt + \cmd + ]} & Move to code block end \\
+  \hline
+  \keys{\ctrl + \shift + [} & \keys{\Alt + \cmd + \shift + [} & Select to the code block start \\
+  \hline
+  \keys{\ctrl + \shift + ]} & \keys{\Alt + \cmd + \shift + ]} & Select to the code block end \\
+  \hline
+  \keys{\ctrl + \del} & \keys{\Alt + \del} & Delete to end of word \\
+  \hline
+  \keys{\ctrl + \backspace} & \keys{\Alt + \backspace} & Delete to start of word \\
+  \hline
+  \keys{\ctrl + \Alt + O} & \keys{\ctrl + \Alt + O} & Optimize imports \\
+  \hline
+  \keys{\Alt + \return} & \keys{\Alt + \return} & Project quick fix (show intention actions and quick fixes) \\
+  \hline
+  \keys{\ctrl + \Alt + L} & \keys{\cmd + \Alt + L} & Reformat code \\
+  \hline
+  \keys{\ctrl + \Alt + I} & \keys{\ctrl + \Alt + I} & Auto-indent lines \\
+  \hline
+  \keys{\tab/\shift + \tab} & \keys{\tab/\shift + \tab} & Indent/unindent lines \\
+  \hline
+  \keys{\ctrl + \shift + J} & \keys{\ctrl + \shift + J} & Smart line join \\
+  \hline
+  \keys{\ctrl + \return} & \keys{\cmd + \return} & Smart line split \\
+  \hline
+  \keys{\shift + \return} & \keys{\shift + \return} & Start new line \\
+  \hline
+  \keys{F2 / \shift + F2} & \keys{F2 / \shift + F2} & Next/previous highlighted error \\
+  \hline
+  \subheaderrowcolor \multicolumn{3}{|l|}{Build and Run} \\
+  \hline
+  \keys{\ctrl + F9} & \keys{\cmd + F9} & Build \\
+  \hline
+  \keys{\shift + F10} & \keys{\ctrl + R} & Build and run \\
+  \hline
+  \keys{\ctrl + F10} & \keys{\ctrl + \cmd + R} & Apply changes (with Instant Run) \\
+  \hline
+  \subheaderrowcolor \multicolumn{3}{|l|}{Debugging} \\
+  \hline
+  \keys{\shift + F9} & \keys{\ctrl + D} & Debug \\
+  \hline
+  \keys{F8} & \keys{F8} & Step over \\
+  \hline
+  \keys{F7} & \keys{F7} & Step into \\
+  \hline
+  \keys{\shift + F7} & \keys{\shift + F7} & Smart step into \\
+  \hline
+  \keys{\shift + F8} & \keys{\shift + F8} & Step out \\
+  \hline
+  \keys{\Alt + F9} & \keys{\Alt + F9} & Run to cursor \\
+  \hline
+  \keys{\Alt + F8} & \keys{\Alt + F8} & Evaluate expression \\
+  \hline
+  \keys{F9} & \keys{\cmd + \Alt + R} & Resume program \\
+  \hline
+  \keys{\ctrl + F8} & \keys{\cmd + F8} & Toggle breakpoint \\
+  \hline
+  \keys{\ctrl + \shift + F8} & \keys{\cmd + \shift + F8} & View breakpoints \\
+  \hline
+  \subheaderrowcolor \multicolumn{3}{|l|}{Refactoring} \\
+  \hline
+  \keys{F5} & \keys{F5} & Copy \\
+  \hline
+  \keys{F6} & \keys{F6} & Move \\
+  \hline
+  \keys{\Alt + \del} & \keys{\cmd + \del} & Safe delete \\
+  \hline
+  \keys{\shift + F6} & \keys{\shift + F6} & Rename \\
+  \hline
+  \keys{\ctrl + F6} & \keys{\cmd + F6} & Change signature \\
+  \hline
+  \keys{\ctrl + \Alt + N} & \keys{\cmd + \Alt + N} & Inline \\
+  \hline
+  \keys{\ctrl + \Alt + M} & \keys{\cmd + \Alt + M} & Extract method \\
+  \hline
+  \keys{\ctrl + \Alt + V} & \keys{\cmd + \Alt + V} & Extract variable \\
+  \hline
+  \keys{\ctrl + \Alt + F} & \keys{\cmd + \Alt + F} & Extract field \\
+  \hline
+  \keys{\ctrl + \Alt + C} & \keys{\cmd + \Alt + C} & Extract constant \\
+  \hline
+  \keys{\ctrl + \Alt + P} & \keys{\cmd + \Alt + P} & Extract parameter \\
+  \hline
+  \subheaderrowcolor \multicolumn{3}{|l|}{Version Control / Local
+    History} \\
+  \hline
+  \keys{\ctrl + K} & \keys{\cmd + K} & Commit project to VCS \\
+  \hline
+  \keys{\ctrl + T} & \keys{\cmd + T} & Update project from VCS \\
+  \hline
+  \keys{\Alt + \shift + C} & \keys{\Alt + \shift + C} & View recent changes \\
+  \hline
+  \keys{\Alt + `} & \keys{\ctrl + V} & Open VCS popup \\
+  \hline
+\end{longtable}}\quad
