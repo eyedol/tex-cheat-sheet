@@ -1,4 +1,4 @@
-%% Start of file `awesome-cv.cls'.
+%% Start of file `cheat-sheet.cls'.
 % Cheat Sheet Class File
 %
 % This class has been downloaded from:
@@ -9,7 +9,8 @@
 % http://www.addhen.org
 %
 % Notes:
-% 1) This class file defines the structure and layout of the template file (cv.tex, resume.tex).
+% 1) This class file defines the structure and layout of the template file 
+% (android-studio-shortcuts.tex).
 % 2) It has been written in such a way that under most circumstances you 
 % should not need to edit it.
 %
